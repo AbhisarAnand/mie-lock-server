@@ -1,0 +1,17 @@
+{
+    "description": "Example Pass",
+    "formatVersion": 1,
+    "organizationName": "Your Organization",
+    "passTypeIdentifier": "pass.com.yourorganization.pass",
+    "serialNumber": "123456",
+    "teamIdentifier": "YOUR_TEAM_IDENTIFIER",
+    "barcode": {
+      "message": "https://example.com",
+      "format": "PKBarcodeFormatQR",
+      "messageEncoding": "iso-8859-1"
+    },
+    "backgroundColor": "rgb(255,255,255)",
+    "logoText": "Example Pass",
+    "foregroundColor": "rgb(0,0,0)"
+  }
+  
