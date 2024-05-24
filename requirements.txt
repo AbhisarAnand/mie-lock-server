@@ -2,3 +2,7 @@ qrcode
 Flask
 Flask-SQLAlchemy
 SQLAlchemy
+Flask-RESTful
+Flask-Mail
+Flask-WTF
+Flask-Limiter
