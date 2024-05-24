@@ -1,1 +1,4 @@
 qrcode
+Flask
+Flask-SQLAlchemy
+SQLAlchemy
