@@ -1,11 +1,21 @@
 const express = require('express');
+const sequelize = require('./database/database');
+
 const app = express();
 const PORT = 3000;
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+sequelize.sync({ force: false })  // Set to 'true' if you need to rebuild the tables
+  .then(() => {
+    console.log('Database synced');
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+    app.get('/', (req, res) => {
+      res.send('Hello World!');
+    });
+
+    app.listen(PORT, () => {
+      console.log(`Server running on http://localhost:${PORT}`);
+    });
+  })
+  .catch(err => {
+    console.error('Failed to sync database:', err);
+  });
