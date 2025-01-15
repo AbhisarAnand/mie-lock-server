@@ -6,3 +6,10 @@ Flask-RESTful
 Flask-Mail
 Flask-WTF
 Flask-Limiter
+Flask-Bcrypt
+flask-socketio
+eventlet
+websockets
+requests
+pytz
+gunicorn

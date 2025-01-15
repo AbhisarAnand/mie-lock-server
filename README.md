@@ -1,1 +1,1 @@
-# mie-lock-server
+# MIE Lock Server
